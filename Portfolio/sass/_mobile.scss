@@ -1,0 +1,486 @@
+// SCREEN AT 1700PX
+
+@media screen and (max-width: 1700px) {
+
+    body #about {
+        padding-top: 97px;
+        height: 800px;
+        margin-bottom: 97px;
+    }
+
+    body #skills {
+        margin-bottom: 97px;
+    }
+
+    body #work {
+        padding-top: 97px;
+        margin-bottom: 97px;
+    }
+
+    body .container {
+
+        .content {
+            $shape-size:400px;
+
+            .red-circle1 {
+                top: calc(50% - (#{$shape-size}/2));
+                left: calc(#{$shape-size} / 2 * -1);
+                height: $shape-size;
+                width: $shape-size;
+            }
+    
+            .red-circle2 {
+                top: calc(50% - (#{$shape-size}/2));
+                right: calc(#{$shape-size} / 2 * -1);
+                height: $shape-size;
+                width: $shape-size;
+            }
+        }
+    }
+
+    body #work {
+        .extra-info {
+            font-size: 14px;
+        }
+    }
+}
+
+// SCREEN AT 1400PX
+@media screen and (max-width: 1400px) {
+
+    body #home {
+        padding-top: 85px;
+        height: 900px;
+    }
+
+    body #about {
+        padding-top: 20px;
+    }
+
+    body #skills {
+        padding-top: 97px;
+        margin-bottom: 97px;
+        height: 882px;
+    }
+
+    body #work {
+        padding-top: 97px;
+        height: 1250px;
+        margin-bottom: 150px;
+    }
+
+    .navbar {
+        .navbar-container{
+            z-index: 1;
+        }
+    }
+
+    body .container {
+
+        .content {
+            $shape-size: 400px;
+            z-index: 0;
+
+            .red-circle1 {
+                top: calc(#{$shape-size} / 2 * -1);
+                left: calc(50% - (#{$shape-size}/2));
+                height: $shape-size;
+                width: $shape-size;
+            }
+    
+            .red-circle2 {
+                top: calc(100% - (#{$shape-size}/2));
+                left: calc(50% - (#{$shape-size}/2));
+                height: $shape-size;
+                width: $shape-size;
+            }
+        }
+    }
+
+    body #skills {
+        $shape-size-m: 250px;
+
+        .red-circle5 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            left: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .red-circle6 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            right: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .content-cont {
+
+            .skills-container {
+                grid-template-columns: repeat(3, 1fr);
+                padding: 0;
+            }
+        }
+
+        .content-cont::after {
+            bottom: -20px;
+        }
+    }
+
+    body #about {
+        $shape-size-m: 250px;
+
+        .red-circle5 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            left: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .red-circle6 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            right: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .abt-content {
+
+            .info {
+                width: 100%;
+            }
+
+            p {
+                font-size: 1.1rem;
+
+                .highlight::before {
+                    height:11px;
+                }
+
+                .highlight::after {
+                    height:12px;
+                }
+            }
+        }
+    }
+
+    body #work {
+        $shape-size-m: 250px;
+
+        .red-circle5 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            left: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .red-circle6 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            right: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .projects {
+            grid-template-columns: 1fr;
+
+            .project-cont {
+                max-width: 600px;
+                justify-self: center;
+            }
+
+            .extra-info {
+                font-size: 13px;
+
+                li {
+                    font-size: 12px;
+                }
+                .project-links {
+                    button {
+                        font-size: 12px;
+                        height: 50px;
+                        width: 120px;
+                    }
+                }
+            }
+        }
+    }
+
+    body #contact {
+        .contact-cont {
+            form {
+                width: 40%;
+
+                button {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+// SCREEN AT 1000PX
+@media screen and (max-width: 1000px) {
+    body #home {
+        .container {
+            .content {
+                h2 {
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+
+    body #skills {
+
+        height: 1100px;
+
+        .content-cont {
+            .skills-container {
+                grid-template-columns: 1fr 1fr;
+                padding: 0;
+                row-gap: 1em;
+                column-gap: 1.5em;
+            }
+        }
+    }
+};
+    
+
+// SCREEN AT 800PX
+@media screen and (max-width: 800px) {
+
+    .navbar .fas {
+        visibility: visible;
+    }
+
+    .navbar {
+        background-color: white;
+        width: 100%;
+
+        .navbar-container {
+            position: relative;
+
+            .navbar-links {
+                position: absolute;
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+                top: 6rem;
+                clip-path: inset(0 0 100% 0);
+                transition: all 800ms ease;
+
+                .navbar-link-container {
+                    border-right: none;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+                    padding: 0;
+                    padding: 5px 0;
+                    cursor: pointer;
+                    background-color: white;
+                }
+
+                .navbar-link-container:hover {
+                    background-color: rgb(218, 218, 218);
+                }
+
+                .navbar-link:hover::after {
+                    content: none;
+                }
+            }
+
+            .navbar-links.open {
+                clip-path: inset(0 0 0 0);
+            }
+        }
+    }
+
+    body #home {
+        padding-top: 97px;
+        height: 900px;
+    }
+
+    body #about {
+        padding-top: 97px;
+        height: 950px;
+    }
+
+    body #skills {
+        height: 1128px;
+        padding-top: 97px;
+        margin-bottom: 97px;
+    }
+
+    body #work {
+        padding-top: 97px;
+        height: 1250px;
+        margin-bottom: 50px;
+    }
+
+    body #home 
+        .container {
+
+        .content {
+            $shape-size: 350px;
+
+            .red-circle1 {
+                top: calc(#{$shape-size} / 2 * -1);
+                left: calc(50% - (#{$shape-size}/2));
+                height: $shape-size;
+                width: $shape-size;
+            }
+    
+            .red-circle2 {
+                top: calc(100% - (#{$shape-size}/2));
+                left: calc(50% - (#{$shape-size}/2));
+                height: $shape-size;
+                width: $shape-size;
+            }
+
+            h2 {
+                font-size:2.5rem;
+                width: 90%;
+            }
+
+            .letter {
+                font-size: 4rem;
+            }
+
+        }
+    }
+
+    body #skills {
+        $shape-size-m: 150px;
+
+        .red-circle5 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            left: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .red-circle6 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            right: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .content-cont {
+
+            .skills-container {
+                grid-template-columns: 1fr 1fr;
+                padding: 0;
+                row-gap: 1em;
+                column-gap: 1.5em;
+
+                .card-container {
+                    width: 120px;
+                    height: 180px;
+
+                    .item {
+                        .front {
+                            font-size: 1rem;
+
+                            i {
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        .back {
+                            font-size: 9px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .content-cont::after {
+            bottom: -20px;
+        }
+    }
+
+    body #about {
+        $shape-size-m: 150px;
+
+        .red-circle5 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            left: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .red-circle6 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            right: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .info {
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            a {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    body #work {
+        $shape-size-m: 150px;
+
+        .red-circle5 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            left: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .red-circle6 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            right: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .proj-img {
+            display: none;
+        }
+
+        .res-img {
+            display: block;
+        }
+        
+        .projects {
+            .extra-info {
+                li {
+                    margin: 0 0.5em;
+                }
+
+                .project-links {
+                    button {
+                        font-size: 11px;
+                        height: 40px;
+                        width: 100px;
+                        margin: 0 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    body #contact {
+        .contact-cont {
+            form {
+                width: 60%;
+
+                button {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}

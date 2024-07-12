@@ -1,0 +1,57 @@
+$shape-size: 650px;
+$shape-size-m: 400px;
+
+%shape {
+    position: absolute;
+    height: $shape-size;
+    width: $shape-size;
+    opacity: 0.7;
+    transition: all 400ms ease;
+    cursor: pointer;
+}
+
+%shape:hover {
+    transform: scale(1.05);
+}
+
+%shape-m {
+    position: absolute;
+    height: $shape-size-m;
+    width: $shape-size-m;
+    transition: all 400ms ease;
+    cursor: pointer;
+}
+
+%shape-m:hover {
+    transform: scale(1.05);
+}
+
+%content-cont {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    min-height: 521px;
+    text-align: center;
+    position: relative;
+
+    &::after {
+        content:'';
+        position: absolute;
+        bottom: -60px;
+        left: 0;
+        width: 100%;
+        background-color: $primary;
+        height: 3px;
+    }
+}
+
+%small-proj-img {
+    display: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+}
+
+
+
