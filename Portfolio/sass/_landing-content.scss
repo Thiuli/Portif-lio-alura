@@ -1,0 +1,116 @@
+@import 'colors';
+@import 'utilities';
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 743px;
+    overflow: hidden;
+    position: relative;
+
+    h1 {
+        color: rgb(231, 231, 238);
+        font-size: 22rem;
+        text-align: center;
+        transform: scale(1, 3);
+        position: absolute;
+        bottom: 85px;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 0;
+
+        .red-circle1 {
+            @extend %shape; 
+            top: calc(50% - (#{$shape-size}/2));
+            left: calc(#{$shape-size} / 2 * -1);
+        }
+    
+        .red-circle2 {
+            @extend %shape;
+            top: calc(50% - (#{$shape-size}/2));
+            right: calc(#{$shape-size} / 2 * -1);
+        }
+
+        h2 {
+            font-size: 3rem;
+            line-height: 1.5;
+        }
+
+        .letter {
+            display: inline-block;
+            font-size: 4.5rem;
+            color: $primary;
+            cursor: pointer;
+            margin-left: -10px;
+        }
+
+        .letter.triggered {
+            animation: squeeze 1s 100ms linear;
+        }
+
+        #first {
+            margin-left: 10px;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .go-btn {
+            height: 50px;
+            width: 150px;
+            cursor: pointer;
+            font-family: 'Sora', sans-serif;
+            font-size: 1rem;
+            color: white;
+            margin-top: 30px;
+            border-radius: 15px;
+            border: none;
+            background-color: $primary;
+            transition: transform 300ms ease;
+        }
+
+        .go-btn:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@keyframes squeeze {
+
+    15% {
+        transform: scaleY(0.7) scaleX(0.9);
+    }
+
+    30% {
+        transform: scaleY(1.3) scaleX(1.1);
+    }
+
+    45% {
+        transform: scaleY(0.8) scaleX(0.9);
+    }
+
+    60% {
+        transform: scaleY(1.2) scaleX(1.1);
+    }
+
+    75% { 
+        transform: scaleY(0.9) scaleX(0.9);
+    }
+
+    90% {
+        transform: scaleY(1.1) scaleX(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
